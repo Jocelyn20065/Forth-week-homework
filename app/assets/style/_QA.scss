@@ -1,0 +1,25 @@
+.wrap{
+    padding-bottom: 160px;
+}
+
+h3{
+font-size: $md-font-size-2;
+@include mobile(){
+    font-size:$sm-font-size;
+    font-weight: normal;
+}
+font-weight: bold;
+padding:0 0 32px 0;
+}
+
+h4{
+    font-size:$sm-font-size;
+    font-weight: bold;
+    padding: 16px 0;
+}
+.qa-info p{
+    padding-left: 60px;
+    @include mobile(){
+        padding-left: 0;
+    }
+}

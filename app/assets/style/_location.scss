@@ -3,13 +3,6 @@
     @include pad(){
         max-width: 635px;
     }
-
-    h2{
-        text-align: left;
-        padding-left: 16px;
-        border-left: 8px solid $mcolor;
-        
-    }
     h3{
         font-size:$sm-font-size;
     }
