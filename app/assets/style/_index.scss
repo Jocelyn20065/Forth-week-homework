@@ -1,7 +1,7 @@
 .banner{
 	background:url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
-	height: 770px;
-	background-position: top;
+	height:860px;
+	background-position:center;
 	background-size: cover;
 	color: #650300;
 	display: flex;
@@ -40,7 +40,10 @@ h1{
 
 
 .main-story{
-	background-color: $subcolor;    
+    background-color: $subcolor;  
+}
+.main-story-info{
+    margin-top: 60px;
 }
 .main-story-info-content{
     @include flex;
@@ -76,6 +79,10 @@ h1{
     }
 
 }
+.classic-design{
+    margin-top: 60px;
+}
+
 
 .classic-design-info{
 	@include flex;
@@ -86,18 +93,18 @@ h1{
         padding-bottom: 8px;
         justify-content: center;
     }
-    &:nth-child(3){
-        flex-direction: row-reverse;
-        @include pad(){
-            flex-direction: row;
-        }
-    }
     span{
         vertical-align: middle;
         font-size:$lg-font-size;
+        
     }
 }
-
+.classic-design-info:nth-child(2){
+    flex-direction: row-reverse;
+    @include pad(){
+        flex-direction: row;
+    }
+}
 
 .classic-design-pic{
 	width:635px;
@@ -118,7 +125,10 @@ h1{
 .classic-design-info a{
 	color: $mcolor;
     font-size: $lg-font-size;
+    font-style: italic;
     padding-right: 30px;
+    text-transform: uppercase;
+    white-space:nowrap;
     @include pad(){
         width: 40%;
         padding-left: 30px;
@@ -170,7 +180,9 @@ h1{
 /* co-branded content as following */
 
 .co-branded-design {
-	background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    background-position:center;
+    padding-top: 60px;
 }
 
 .co-brand-design-info{

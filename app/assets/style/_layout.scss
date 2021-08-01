@@ -27,7 +27,6 @@ h2{
 	font-size:$lg-font-size;
 	text-align: center;
 	font-weight: bold;
-	margin-top: 60px;
 	margin-bottom: 40px;
     color:$mcolor;
     @include mobile(){
@@ -82,18 +81,19 @@ a{
     @include mobile(){
         display: block;	
     }
-    img{
-        display: block;
-        padding-left:80px;
+    .logo{
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true");
+        height: 48px;
+        width:80px;
+        margin-left: 88px;
         @include pad(){
-            padding-left: 32px;
+            margin-left: 32px;
         }
         @include mobile(){
             margin: 0 auto;
             padding:10px 0;
-        }       
+        } 
     }
-   
 }
 
 .nav-selection{
@@ -127,33 +127,42 @@ a{
 // footer as below.
 
 
-.footer{
+.footer{   
 	background-color:$mcolor;
 	color:$light;
 }
 .footer-m-flex{
     @include flex;
 	padding-top: 32px;
-	padding-bottom: 36px;
-
+    padding-bottom: 36px;
 }
 .footer-nav{
     @include flex;
     li{
         padding-right: 48px;
         padding-bottom: 36px;
+        @include pad(){
+            padding-right: 20px;
+            padding-left: 20px;
+        }
     }
+    
     @include mobile(){
         display: none;
     }
 }	
 .media-bar{
     @include flex;
-    width: 25%;
+    width: 25%; 
     @include mobile{
-        width: 30%;
+        width:30%;
     }
-
+    img{
+        @include pad(){
+            width: 24px;
+            height: 24px;
+        }
+    }   
 }
 
 
@@ -169,7 +178,18 @@ a{
         padding-bottom: 36px;}
     img{
         vertical-align: middle;
-        padding-right: 22px;}
+        padding-right: 22px;
+        @include pad(){
+            width: 40px;
+            height: auto;
+            padding-right: 10px;
+        }
+        @include mobile(){
+            width: 30px;
+            height: auto;
+ 
+        }
+    }
     }	
 
 
@@ -184,7 +204,6 @@ a{
 	padding-top: 32px;
 	padding-bottom: 39px;
 	border-top: 1px solid #fff;
-	margin: 0 auto;
 }
 .footer-copyright-policy{
     @include flex;
